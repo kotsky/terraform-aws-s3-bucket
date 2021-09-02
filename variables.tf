@@ -4,6 +4,11 @@ variable "create_bucket" {
   default     = true
 }
 
+variable "test_var" {
+  description = "Controls if S3 bucket should be created"
+  type        = string
+}
+
 variable "attach_elb_log_delivery_policy" {
   description = "Controls if S3 bucket should have ELB log delivery policy attached"
   type        = bool
